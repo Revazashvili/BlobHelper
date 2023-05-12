@@ -470,7 +470,7 @@
         <member name="M:BlobHelper.AwsBlobClient.ExistsAsync(System.String,System.Threading.CancellationToken)">
             <inheritdoc />
         </member>
-        <member name="M:BlobHelper.AwsBlobClient.GenerateUrlAsync(System.String,System.Threading.CancellationToken)">
+        <member name="M:BlobHelper.AwsBlobClient.GenerateUrl(System.String,System.Threading.CancellationToken)">
             <inheritdoc />
         </member>
         <member name="M:BlobHelper.AwsBlobClient.EnumerateAsync(System.String,System.String,System.Threading.CancellationToken)">
@@ -515,7 +515,7 @@
         <member name="M:BlobHelper.AzureBlobClient.ExistsAsync(System.String,System.Threading.CancellationToken)">
             <inheritdoc />
         </member>
-        <member name="M:BlobHelper.AzureBlobClient.GenerateUrlAsync(System.String,System.Threading.CancellationToken)">
+        <member name="M:BlobHelper.AzureBlobClient.GenerateUrl(System.String,System.Threading.CancellationToken)">
             <inheritdoc />
         </member>
         <member name="M:BlobHelper.AzureBlobClient.EnumerateAsync(System.String,System.String,System.Threading.CancellationToken)">
@@ -560,7 +560,7 @@
         <member name="M:BlobHelper.DiskBlobClient.ExistsAsync(System.String,System.Threading.CancellationToken)">
             <inheritdoc />
         </member>
-        <member name="M:BlobHelper.DiskBlobClient.GenerateUrlAsync(System.String,System.Threading.CancellationToken)">
+        <member name="M:BlobHelper.DiskBlobClient.GenerateUrl(System.String,System.Threading.CancellationToken)">
             <inheritdoc />
         </member>
         <member name="M:BlobHelper.DiskBlobClient.EnumerateAsync(System.String,System.String,System.Threading.CancellationToken)">
@@ -650,7 +650,7 @@
             <param name="token">The cancellation token.</param>
             <returns>A task representing the asynchronous operation. The task result is true if the object exists; otherwise, false.</returns>
         </member>
-        <member name="M:BlobHelper.IBlobClient.GenerateUrlAsync(System.String,System.Threading.CancellationToken)">
+        <member name="M:BlobHelper.IBlobClient.GenerateUrl(System.String,System.Threading.CancellationToken)">
             <summary>
             Generates a URL to access the object with the specified key in the blob storage asynchronously.
             </summary>
@@ -710,7 +710,7 @@
         <member name="M:BlobHelper.KomodoBlobClient.ExistsAsync(System.String,System.Threading.CancellationToken)">
             <inheritdoc />
         </member>
-        <member name="M:BlobHelper.KomodoBlobClient.GenerateUrlAsync(System.String,System.Threading.CancellationToken)">
+        <member name="M:BlobHelper.KomodoBlobClient.GenerateUrl(System.String,System.Threading.CancellationToken)">
             <inheritdoc />
         </member>
         <member name="M:BlobHelper.KomodoBlobClient.EnumerateAsync(System.String,System.String,System.Threading.CancellationToken)">
@@ -755,7 +755,7 @@
         <member name="M:BlobHelper.KvpBaseBlobClient.ExistsAsync(System.String,System.Threading.CancellationToken)">
             <inheritdoc />
         </member>
-        <member name="M:BlobHelper.KvpBaseBlobClient.GenerateUrlAsync(System.String,System.Threading.CancellationToken)">
+        <member name="M:BlobHelper.KvpBaseBlobClient.GenerateUrl(System.String,System.Threading.CancellationToken)">
             <inheritdoc />
         </member>
         <member name="M:BlobHelper.KvpBaseBlobClient.EnumerateAsync(System.String,System.String,System.Threading.CancellationToken)">

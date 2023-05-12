@@ -114,7 +114,7 @@ namespace BlobHelper
         }
 
         /// <inheritdoc />
-        public string GenerateUrlAsync(string key, CancellationToken token = default)
+        public string GenerateUrl(string key, CancellationToken token = default)
         {
             if (!_KomodoSettings.Endpoint.EndsWith("/")) _KomodoSettings.Endpoint += "/";
 

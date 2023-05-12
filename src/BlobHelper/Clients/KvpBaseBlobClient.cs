@@ -117,7 +117,7 @@ namespace BlobHelper
         }
 
         /// <inheritdoc />
-        public string GenerateUrlAsync(string key, CancellationToken token = default)
+        public string GenerateUrl(string key, CancellationToken token = default)
         {
             if (!_KvpbaseSettings.Endpoint.EndsWith("/")) _KvpbaseSettings.Endpoint += "/";
 

@@ -263,7 +263,7 @@ namespace BlobHelper
         {
             if (String.IsNullOrEmpty(key)) throw new ArgumentNullException(nameof(key));
 
-            return _BlobClient.GenerateUrlAsync(key, token);
+            return _BlobClient.GenerateUrl(key, token);
         }
 
         /// <summary>

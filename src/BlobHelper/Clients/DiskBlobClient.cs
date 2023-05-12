@@ -25,7 +25,7 @@ namespace BlobHelper
 #pragma warning disable CS1998 // Async method lacks 'await' operators and will run synchronously
         public async Task<byte[]> GetAsync(string key, CancellationToken token = default)
         {
-            string filename = GenerateUrlAsync(key);
+            string filename = GenerateUrl(key);
             if (Directory.Exists(filename))
             {
                 return new byte[0];
@@ -43,7 +43,7 @@ namespace BlobHelper
         /// <inheritdoc />
         public async Task<BlobData> GetStreamAsync(string key, CancellationToken token = default)
         {
-            string filename = GenerateUrlAsync(key);
+            string filename = GenerateUrl(key);
             if (File.Exists(filename))
             {
                 long contentLength = new FileInfo(filename).Length;
@@ -63,7 +63,7 @@ namespace BlobHelper
         /// <inheritdoc />
         public async Task<BlobMetadata> GetMetadataAsync(string key, CancellationToken token = default)
         {
-            string filename = GenerateUrlAsync(key);
+            string filename = GenerateUrl(key);
 
             if (File.Exists(filename))
             {
@@ -119,7 +119,7 @@ namespace BlobHelper
         /// <inheritdoc />
         public async Task WriteAsync(string key, string contentType, long contentLength, Stream stream, CancellationToken token = default)
         {
-            string filename = GenerateUrlAsync(key);
+            string filename = GenerateUrl(key);
 
             if (
                 (key.EndsWith("\\") || key.EndsWith("/"))
@@ -174,7 +174,7 @@ namespace BlobHelper
         /// <inheritdoc />
         public async Task DeleteAsync(string key, CancellationToken token = default)
         {
-            string filename = GenerateUrlAsync(key);
+            string filename = GenerateUrl(key);
             if (File.Exists(filename))
             {
                 File.Delete(filename);
@@ -193,7 +193,7 @@ namespace BlobHelper
         /// <inheritdoc />
         public async Task<bool> ExistsAsync(string key, CancellationToken token = default)
         {
-            string filename = GenerateUrlAsync(key);
+            string filename = GenerateUrl(key);
             if (File.Exists(filename))
             {
                 return true;
@@ -209,7 +209,7 @@ namespace BlobHelper
         }
 
         /// <inheritdoc />
-        public string GenerateUrlAsync(string key, CancellationToken token = default)
+        public string GenerateUrl(string key, CancellationToken token = default)
         {
             string dir = _DiskSettings.Directory;
             dir = dir.Replace("\\", "/");

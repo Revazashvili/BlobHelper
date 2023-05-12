@@ -93,7 +93,7 @@ namespace BlobHelper
         /// <param name="key">The key of the object to generate the URL for.</param>
         /// <param name="token">The cancellation token.</param>
         /// <returns>A string representing the URL to access the object.</returns>
-        string GenerateUrlAsync(string key, CancellationToken token = default);
+        string GenerateUrl(string key, CancellationToken token = default);
 
         /// <summary>
         /// Enumerates all objects in the blob storage asynchronously.
