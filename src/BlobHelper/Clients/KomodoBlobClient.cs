@@ -152,7 +152,7 @@ namespace BlobHelper.Clients
             Komodo.Sdk.Classes.EnumerationResult ker = await _Komodo.Enumerate(_KomodoSettings.IndexGUID, eq, token).ConfigureAwait(false);
             
             EnumerationResult ret = new EnumerationResult();
-            ret.NextContinuationToken = ContinuationTokenHelper.BuildContinuationToken(startIndex + count, count);
+            ret.NextContinuationToken = KomodoBuildContinuationToken(startIndex + count, count);
 
             if (ker.Matches != null && ker.Matches.Count > 0)
             {
@@ -197,6 +197,12 @@ namespace BlobHelper.Clients
             }
 
             return er;
+        }
+        
+        private static string KomodoBuildContinuationToken(long start, int count)
+        {
+            if (start >= count) return null;
+            return ContinuationTokenHelper.BuildContinuationToken(start, count);
         }
     }
 }
