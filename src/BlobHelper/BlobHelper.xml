@@ -434,6 +434,336 @@
             BLOB storage settings.
             </summary>
         </member>
+        <member name="T:BlobHelper.AwsBlobClient">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.AwsBlobClient.#ctor(BlobHelper.AwsSettings)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BlobHelper.AwsBlobClient"/> class.
+            </summary>
+            <param name="awsSettings">Settings for <see cref="T:BlobHelper.AwsBlobClient"/>.</param>
+        </member>
+        <member name="M:BlobHelper.AwsBlobClient.GetAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.AwsBlobClient.GetStreamAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.AwsBlobClient.GetMetadataAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.AwsBlobClient.WriteAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.AwsBlobClient.WriteAsync(System.String,System.String,System.Byte[],System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.AwsBlobClient.WriteAsync(System.String,System.String,System.Int64,System.IO.Stream,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.AwsBlobClient.WriteManyAsync(System.Collections.Generic.List{BlobHelper.WriteRequest},System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.AwsBlobClient.DeleteAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.AwsBlobClient.ExistsAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.AwsBlobClient.GenerateUrlAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.AwsBlobClient.EnumerateAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.AwsBlobClient.EmptyAsync(System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:BlobHelper.AzureBlobClient">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.AzureBlobClient.#ctor(BlobHelper.AzureSettings)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BlobHelper.AzureBlobClient"/> class.
+            </summary>
+            <param name="azureSettings">Settings for <see cref="T:BlobHelper.AzureBlobClient"/>.</param>
+        </member>
+        <member name="M:BlobHelper.AzureBlobClient.GetAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.AzureBlobClient.GetStreamAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.AzureBlobClient.GetMetadataAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.AzureBlobClient.WriteAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.AzureBlobClient.WriteAsync(System.String,System.String,System.Byte[],System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.AzureBlobClient.WriteAsync(System.String,System.String,System.Int64,System.IO.Stream,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.AzureBlobClient.WriteManyAsync(System.Collections.Generic.List{BlobHelper.WriteRequest},System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.AzureBlobClient.DeleteAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.AzureBlobClient.ExistsAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.AzureBlobClient.GenerateUrlAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.AzureBlobClient.EnumerateAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.AzureBlobClient.EmptyAsync(System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:BlobHelper.DiskBlobClient">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.DiskBlobClient.#ctor(BlobHelper.DiskSettings)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BlobHelper.DiskBlobClient"/> class.
+            </summary>
+            <param name="diskSettings">Settings for <see cref="T:BlobHelper.DiskBlobClient"/>.</param>
+        </member>
+        <member name="M:BlobHelper.DiskBlobClient.GetAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.DiskBlobClient.GetStreamAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.DiskBlobClient.GetMetadataAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.DiskBlobClient.WriteAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.DiskBlobClient.WriteAsync(System.String,System.String,System.Byte[],System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.DiskBlobClient.WriteAsync(System.String,System.String,System.Int64,System.IO.Stream,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.DiskBlobClient.WriteManyAsync(System.Collections.Generic.List{BlobHelper.WriteRequest},System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.DiskBlobClient.DeleteAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.DiskBlobClient.ExistsAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.DiskBlobClient.GenerateUrlAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.DiskBlobClient.EnumerateAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.DiskBlobClient.EmptyAsync(System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:BlobHelper.IBlobClient">
+            <summary>
+            An interface for interacting with different blob storage providers.
+            </summary>
+        </member>
+        <member name="M:BlobHelper.IBlobClient.GetAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Gets the content of the blob with the specified key.
+            </summary>
+            <param name="key">The key of the blob to get.</param>
+            <param name="token">A cancellation token to observe while waiting for the task to complete.</param>
+            <returns>A byte array containing the content of the blob.</returns>
+        </member>
+        <member name="M:BlobHelper.IBlobClient.GetStreamAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Gets the stream of the blob with the specified key.
+            </summary>
+            <param name="key">The key of the blob to get.</param>
+            <param name="token">A cancellation token to observe while waiting for the task to complete.</param>
+            <returns>A <see cref="T:BlobHelper.BlobData"/> object containing the stream of the blob.</returns>
+        </member>
+        <member name="M:BlobHelper.IBlobClient.GetMetadataAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Gets the metadata of the blob with the specified key.
+            </summary>
+            <param name="key">The key of the blob to get metadata for.</param>
+            <param name="token">A cancellation token to observe while waiting for the task to complete.</param>
+            <returns>A <see cref="T:BlobHelper.BlobMetadata"/> object containing the metadata of the blob.</returns>
+        </member>
+        <member name="M:BlobHelper.IBlobClient.WriteAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Writes the specified data to the blob with the specified key.
+            </summary>
+            <param name="key">The key of the blob to write to.</param>
+            <param name="contentType">The content type of the blob.</param>
+            <param name="data">The data to write to the blob.</param>
+            <param name="token">A cancellation token to observe while waiting for the task to complete.</param>
+        </member>
+        <member name="M:BlobHelper.IBlobClient.WriteAsync(System.String,System.String,System.Byte[],System.Threading.CancellationToken)">
+            <summary>
+            Writes the specified data to the blob with the specified key.
+            </summary>
+            <param name="key">The key of the blob to write to.</param>
+            <param name="contentType">The content type of the blob.</param>
+            <param name="data">The data to write to the blob.</param>
+            <param name="token">A cancellation token to observe while waiting for the task to complete.</param>
+        </member>
+        <member name="M:BlobHelper.IBlobClient.WriteAsync(System.String,System.String,System.Int64,System.IO.Stream,System.Threading.CancellationToken)">
+            <summary>
+            Writes the data from the specified stream to the blob with the specified key.
+            </summary>
+            <param name="key">The key of the blob to write to.</param>
+            <param name="contentType">The content type of the blob.</param>
+            <param name="contentLength">The length of the content in the stream.</param>
+            <param name="stream">The stream containing the data to write to the blob.</param>
+            <param name="token">A cancellation token to observe while waiting for the task to complete.</param>
+        </member>
+        <member name="M:BlobHelper.IBlobClient.WriteManyAsync(System.Collections.Generic.List{BlobHelper.WriteRequest},System.Threading.CancellationToken)">
+            <summary>
+            Writes many objects to the blob storage asynchronously.
+            </summary>
+            <param name="objects">The list of objects to write to the blob storage.</param>
+            <param name="token">The cancellation token.</param>
+            <returns>A task representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:BlobHelper.IBlobClient.DeleteAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Deletes an object from the blob storage asynchronously.
+            </summary>
+            <param name="key">The key of the object to delete from the blob storage.</param>
+            <param name="token">The cancellation token.</param>
+            <returns>A task representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:BlobHelper.IBlobClient.ExistsAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Checks if an object with the specified key exists in the blob storage asynchronously.
+            </summary>
+            <param name="key">The key of the object to check.</param>
+            <param name="token">The cancellation token.</param>
+            <returns>A task representing the asynchronous operation. The task result is true if the object exists; otherwise, false.</returns>
+        </member>
+        <member name="M:BlobHelper.IBlobClient.GenerateUrlAsync(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Generates a URL to access the object with the specified key in the blob storage asynchronously.
+            </summary>
+            <param name="key">The key of the object to generate the URL for.</param>
+            <param name="token">The cancellation token.</param>
+            <returns>A string representing the URL to access the object.</returns>
+        </member>
+        <member name="M:BlobHelper.IBlobClient.EnumerateAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <summary>
+            Enumerates all objects in the blob storage asynchronously.
+            </summary>
+            <param name="prefix">The prefix used to filter the objects to enumerate.</param>
+            <param name="continuationToken">The continuation token used to resume a previous enumeration operation.</param>
+            <param name="token">The cancellation token.</param>
+            <returns>A task representing the asynchronous operation. The task result is an <see cref="T:BlobHelper.EnumerationResult"/> object containing the enumeration results.</returns>
+        </member>
+        <member name="M:BlobHelper.IBlobClient.EmptyAsync(System.Threading.CancellationToken)">
+            <summary>
+            Deletes all objects in the blob storage asynchronously.
+            </summary>
+            <param name="token">The cancellation token.</param>
+            <returns>A task representing the asynchronous operation.</returns>
+        </member>
+        <member name="T:BlobHelper.KomodoBlobClient">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.KomodoBlobClient.#ctor(BlobHelper.KomodoSettings)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BlobHelper.KomodoBlobClient"/> class.
+            </summary>
+            <param name="komodoSettings">Settings for <see cref="T:BlobHelper.KomodoBlobClient"/>.</param>
+        </member>
+        <member name="M:BlobHelper.KomodoBlobClient.GetAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.KomodoBlobClient.GetStreamAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.KomodoBlobClient.GetMetadataAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.KomodoBlobClient.WriteAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.KomodoBlobClient.WriteAsync(System.String,System.String,System.Byte[],System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.KomodoBlobClient.WriteAsync(System.String,System.String,System.Int64,System.IO.Stream,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.KomodoBlobClient.WriteManyAsync(System.Collections.Generic.List{BlobHelper.WriteRequest},System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.KomodoBlobClient.DeleteAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.KomodoBlobClient.ExistsAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.KomodoBlobClient.GenerateUrlAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.KomodoBlobClient.EnumerateAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.KomodoBlobClient.EmptyAsync(System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="T:BlobHelper.KvpBaseBlobClient">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.KvpBaseBlobClient.#ctor(BlobHelper.KvpbaseSettings)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BlobHelper.KvpBaseBlobClient"/> class.
+            </summary>
+            <param name="kvpbaseSettings">Settings for <see cref="T:BlobHelper.KvpBaseBlobClient"/>.</param>
+        </member>
+        <member name="M:BlobHelper.KvpBaseBlobClient.GetAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.KvpBaseBlobClient.GetStreamAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.KvpBaseBlobClient.GetMetadataAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.KvpBaseBlobClient.WriteAsync(System.String,System.String,System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.KvpBaseBlobClient.WriteAsync(System.String,System.String,System.Byte[],System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.KvpBaseBlobClient.WriteAsync(System.String,System.String,System.Int64,System.IO.Stream,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.KvpBaseBlobClient.WriteManyAsync(System.Collections.Generic.List{BlobHelper.WriteRequest},System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.KvpBaseBlobClient.DeleteAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.KvpBaseBlobClient.ExistsAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.KvpBaseBlobClient.GenerateUrlAsync(System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.KvpBaseBlobClient.EnumerateAsync(System.String,System.String,System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
+        <member name="M:BlobHelper.KvpBaseBlobClient.EmptyAsync(System.Threading.CancellationToken)">
+            <inheritdoc />
+        </member>
         <member name="T:BlobHelper.CopyStatistics">
             <summary>
             BLOB copy statistics.

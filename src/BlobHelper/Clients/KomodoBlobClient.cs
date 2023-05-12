@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Komodo.Sdk;
 using Komodo.Sdk.Classes;
 
-namespace BlobHelper.Clients
+namespace BlobHelper
 {
     /// <inheritdoc />
     public class KomodoBlobClient : IBlobClient

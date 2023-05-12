@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
 
-namespace BlobHelper.Clients
+namespace BlobHelper
 {
     /// <inheritdoc />
     public class AzureBlobClient : IBlobClient

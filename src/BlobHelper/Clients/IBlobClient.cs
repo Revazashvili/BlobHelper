@@ -3,7 +3,7 @@ using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace BlobHelper.Clients
+namespace BlobHelper
 {
     /// <summary>
     /// An interface for interacting with different blob storage providers.

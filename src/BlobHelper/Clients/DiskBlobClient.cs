@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace BlobHelper.Clients
+namespace BlobHelper
 {
     /// <inheritdoc />
     public class DiskBlobClient: IBlobClient

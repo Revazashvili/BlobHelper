@@ -6,7 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using KvpbaseSDK;
 
-namespace BlobHelper.Clients
+namespace BlobHelper
 {
     /// <inheritdoc />
     public class KvpBaseBlobClient: IBlobClient
