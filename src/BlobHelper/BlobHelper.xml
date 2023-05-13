@@ -1172,6 +1172,56 @@
             <param name="data">JSON data.</param>
             <returns>Instance.</returns>
         </member>
+        <member name="T:BlobHelper.ServiceCollectionExtensions">
+            <summary>
+            Provides extension methods to add Blob Storage services to an IServiceCollection
+            </summary>
+        </member>
+        <member name="M:BlobHelper.ServiceCollectionExtensions.AddAzureBlobStorage(Microsoft.Extensions.DependencyInjection.IServiceCollection,BlobHelper.AzureSettings,Microsoft.Extensions.DependencyInjection.ServiceLifetime)">
+            <summary>
+            Adds an Azure Blob Storage service to an IServiceCollection instance.
+            </summary>
+            <param name="services">The IServiceCollection instance to which the Azure Blob Storage service should be added.</param>
+            <param name="azureSettings">The Azure settings used to configure the Azure Blob Storage service.</param>
+            <param name="serviceLifetime">The lifetime of the Azure Blob Storage service. Defaults to Scoped.</param>
+            <returns>The updated IServiceCollection instance with the Azure Blob Storage service added.</returns>
+        </member>
+        <member name="M:BlobHelper.ServiceCollectionExtensions.AddAwsBlobStorage(Microsoft.Extensions.DependencyInjection.IServiceCollection,BlobHelper.AwsSettings,Microsoft.Extensions.DependencyInjection.ServiceLifetime)">
+            <summary>
+            Adds an Aws Blob Storage service to an IServiceCollection instance.
+            </summary>
+            <param name="services">The IServiceCollection instance to which the Aws Blob Storage service should be added.</param>
+            <param name="awsSettings">The Azure settings used to configure the Aws Blob Storage service.</param>
+            <param name="serviceLifetime">The lifetime of the Aws Blob Storage service. Defaults to Scoped.</param>
+            <returns>The updated IServiceCollection instance with the Aws Blob Storage service added.</returns>
+        </member>
+        <member name="M:BlobHelper.ServiceCollectionExtensions.AddKomodoBlobStorage(Microsoft.Extensions.DependencyInjection.IServiceCollection,BlobHelper.KomodoSettings,Microsoft.Extensions.DependencyInjection.ServiceLifetime)">
+            <summary>
+            Adds an v Blob Storage service to an IServiceCollection instance.
+            </summary>
+            <param name="services">The IServiceCollection instance to which the Komodo Blob Storage service should be added.</param>
+            <param name="komodoSettings">The Azure settings used to configure the Komodo Blob Storage service.</param>
+            <param name="serviceLifetime">The lifetime of the Komodo Blob Storage service. Defaults to Scoped.</param>
+            <returns>The updated IServiceCollection instance with the Komodo Blob Storage service added.</returns>
+        </member>
+        <member name="M:BlobHelper.ServiceCollectionExtensions.AddKvpBaseBlobStorage(Microsoft.Extensions.DependencyInjection.IServiceCollection,BlobHelper.KvpbaseSettings,Microsoft.Extensions.DependencyInjection.ServiceLifetime)">
+            <summary>
+            Adds an KvpBase Blob Storage service to an IServiceCollection instance.
+            </summary>
+            <param name="services">The IServiceCollection instance to which the KvpBase Blob Storage service should be added.</param>
+            <param name="kvpBaseSettings">The Azure settings used to configure the KvpBase Blob Storage service.</param>
+            <param name="serviceLifetime">The lifetime of the KvpBase Blob Storage service. Defaults to Scoped.</param>
+            <returns>The updated IServiceCollection instance with the KvpBase Blob Storage service added.</returns>
+        </member>
+        <member name="M:BlobHelper.ServiceCollectionExtensions.AddDiskBlobStorage(Microsoft.Extensions.DependencyInjection.IServiceCollection,BlobHelper.DiskSettings,Microsoft.Extensions.DependencyInjection.ServiceLifetime)">
+            <summary>
+            Adds an Disk Blob Storage service to an IServiceCollection instance.
+            </summary>
+            <param name="services">The IServiceCollection instance to which the v Blob Storage service should be added.</param>
+            <param name="diskSettings">The Azure settings used to configure the v Blob Storage service.</param>
+            <param name="serviceLifetime">The lifetime of the v Blob Storage service. Defaults to Scoped.</param>
+            <returns>The updated IServiceCollection instance with the Disk Blob Storage service added.</returns>
+        </member>
         <member name="T:BlobHelper.Timestamps">
             <summary>
             Object used to measure start, end, and total time associated with an operation.
